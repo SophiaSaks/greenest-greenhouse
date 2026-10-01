@@ -1,7 +1,9 @@
+//arv från Plant
 public class Palmtree extends Plant{
 
-    public Palmtree(){
-        super(Liquid.TAPWATER);
+    public Palmtree(String name, double heightInCm){
+        super(name, Liquid.TAPWATER, 0.5, heightInCm);
+
     }
 
 }
