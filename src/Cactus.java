@@ -1,8 +1,18 @@
 //arv från Plant
-public class Cactus extends Plant{
+public class Cactus extends Plant implements DailyWatering{
 
     public Cactus(String name, double heightInCm){
-        super(name, Liquid.MINERALWATER, 0.2, heightInCm);
+        super(name, PlantType.CACTUS, heightInCm);
+
+    }
+
+    @Override
+    public String dailyWatering(double heightInCm) {
+        return "Your" + heightInCm + "CM tall cactus needs" +
+                PlantType.CACTUS.getLitersPerDay() +
+                "liters of" +
+                PlantType.CACTUS.getLiquidType() +
+                "per day";
 
     }
 }

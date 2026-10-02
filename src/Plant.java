@@ -1,7 +1,7 @@
 public class Plant {
     private String name;
     private double litersPerDay;
-    private Liquid liquid;
+    private PlantType plantType;
     private double heightInCm;
 
     public String getName() {
@@ -12,14 +12,13 @@ public class Plant {
         return litersPerDay;
     }
 
-    public Liquid getLiquid() {
-        return liquid;
+    public PlantType getLiquid() {
+        return plantType;
     }
 
-    public Plant(String name, Liquid liquid, double litersPerDay, double heightInCm){
+    public Plant(String name, PlantType plantType, double heightInCm){
         this.name = name;
-        this.liquid = liquid;
-        this.litersPerDay = litersPerDay;
+        this.plantType = plantType;
         this.heightInCm = heightInCm;
     }
 

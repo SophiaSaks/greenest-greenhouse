@@ -1,11 +1,17 @@
 import java.util.ArrayList;
 
 public class Hotel {
-    Plant plant;
-    ArrayList<Plant> plants = new ArrayList<Plant>();
+    private Plant plant;
+    private ArrayList<Plant> plants = new ArrayList<Plant>();
+    private String name;
 
-    public Hotel(Plant plant, ArrayList<Plant> plants){
+    public Hotel(String name){
+        this.name = name;
 
+    }
+
+    public void add(Plant plant){
+        plants.add(plant);
     }
 
 
