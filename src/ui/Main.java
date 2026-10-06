@@ -21,10 +21,10 @@ public class Main {
             answer = answer.toLowerCase().trim();
 
             switch(answer){
-                case "igge" -> System.out.println("test1");
-                case "laura" -> System.out.println("test");
-                case "meatloaf" -> System.out.println("hejhej");
-                case "olof" -> System.out.println("testtest");
+                case "igge" -> System.out.println(Cactus.dailyWateringCactus(20));
+                case "laura" -> System.out.println(Palmtree.dailyWateringy(500));
+                case "meatloaf" -> System.out.println(CarnivorousPlant.dailyWatering(70));
+                case "olof" -> System.out.println(Palmtree.dailyWateringy(100));
                 default -> System.out.println("Den växten finns inte på vårat hotell!");
             }
         }
