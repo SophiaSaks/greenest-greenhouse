@@ -1,4 +1,9 @@
-import java.util.Locale;
+package ui;
+import model.*;
+import model.Cactus;
+import model.CarnivorousPlant;
+import model.Palmtree;
+
 import java.util.Scanner;
 
 public class Main {
@@ -13,16 +18,16 @@ public class Main {
 
             System.out.println("Vilken växt ska få vätska?");
             String answer = scanner.nextLine();
+            answer = answer.toLowerCase().trim();
 
-            switch(answer.toLowerCase(Locale.ROOT).trim()){
-                case "igge" -> System.out.println("hejhej");
+            switch(answer){
+                case "igge" -> System.out.println("test1");
                 case "laura" -> System.out.println("test");
                 case "meatloaf" -> System.out.println("hejhej");
                 case "olof" -> System.out.println("testtest");
                 default -> System.out.println("Den växten finns inte på vårat hotell!");
             }
         }
-
     }
 
     static void addInitialPlants(){
@@ -31,4 +36,9 @@ public class Main {
         hotel.add(new CarnivorousPlant("Meatloaf", 70));
         hotel.add(new Palmtree("Olof", 100));
     }
+
+    static void hejhej(String answer){
+       Plant hejhej =  hotel.findPlantByName(answer);
+    }
+
 }

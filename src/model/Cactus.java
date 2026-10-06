@@ -1,9 +1,10 @@
-//arv från Plant
-public class Cactus extends Plant implements DailyWatering{
+package model;
+
+//arv från model.Hotel.model.Plant
+public class Cactus extends Plant implements DailyWatering {
 
     public Cactus(String name, double heightInCm){
         super(name, PlantType.CACTUS, heightInCm);
-
     }
 
     @Override

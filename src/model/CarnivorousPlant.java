@@ -1,5 +1,7 @@
-//arv från Plant
-public class CarnivorousPlant extends Plant implements DailyWatering{
+package model;
+
+//arv från model.Hotel.model.Plant
+public class CarnivorousPlant extends Plant implements DailyWatering {
 
     public CarnivorousPlant(String name, double heightInCm){
 

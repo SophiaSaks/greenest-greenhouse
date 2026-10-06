@@ -1,15 +1,12 @@
+package model;
+
 public class Plant {
     private String name;
-    private double litersPerDay;
     private PlantType plantType;
     private double heightInCm;
 
     public String getName() {
         return name;
-    }
-
-    public double getliters() {
-        return litersPerDay;
     }
 
     public PlantType getLiquid() {

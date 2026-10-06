@@ -1,7 +1,9 @@
+package model;
+
 public enum PlantType {
-    PALMTREE("Tapwater", 0.5),
-    CARNIVOROUSPLANT("Proteindrink", 0.1),
-    CACTUS("Mineralwater", 0.2);
+    PALMTREE("tapwater", 0.5),
+    CARNIVOROUSPLANT("proteindrink", 0.1),
+    CACTUS("mineralwater", 0.2);
 
     private final String liquidType;
     private final double litersPerDay;
