@@ -1,6 +1,7 @@
 package model;
 
 public class Plant {
+    //inkapsling på name, plantType och heightInCm
     private String name;
     private PlantType plantType;
     private double heightInCm;
@@ -9,9 +10,11 @@ public class Plant {
         return name;
     }
 
-    public PlantType getLiquid() {
+    public PlantType getPlantType() {
         return plantType;
     }
+
+    public double getheightInCm(){return heightInCm; }
 
     public Plant(String name, PlantType plantType, double heightInCm){
         this.name = name;

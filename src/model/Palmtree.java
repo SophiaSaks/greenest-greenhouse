@@ -5,7 +5,6 @@ public class Palmtree extends Plant  {
 
     public Palmtree(String name, double heightInCm){
         super(name, PlantType.PALMTREE, heightInCm);
-
     }
 
     public static String dailyWateringy(double heightInCm) {
