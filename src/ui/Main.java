@@ -31,7 +31,7 @@ public class Main {
 
             if (plant != null) {
                 System.out.println(plant.getDailyWatering(plant.getheightInCm()));
-            }else{
+            } else{
                 System.out.println(nonExistentPlant);
             }
 
