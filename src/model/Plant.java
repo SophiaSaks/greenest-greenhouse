@@ -1,6 +1,6 @@
 package model;
 
-public class Plant {
+public abstract class Plant {
     //inkapsling på name, plantType och heightInCm
     private String name;
     private PlantType plantType;
@@ -21,5 +21,7 @@ public class Plant {
         this.plantType = plantType;
         this.heightInCm = heightInCm;
     }
+
+    public abstract String getDailyWatering(double heightInCm);
 
 }

@@ -7,7 +7,8 @@ public class Cactus extends Plant {
         super(name, PlantType.CACTUS, heightInCm);
     }
 
-    public static String dailyWateringCactus(double heightInCm) {
+    @Override
+    public String getDailyWatering(double heightInCm) {
         return "Your " + heightInCm + " CM tall cactus needs " +
                 PlantType.CACTUS.getLitersPerDay() +
                 " liters of " +

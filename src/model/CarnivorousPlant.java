@@ -14,7 +14,8 @@ public class CarnivorousPlant extends Plant {
     }
 
 
-    public static String dailyWatering(double heightInCm) {
+    @Override
+    public String getDailyWatering(double heightInCm) {
         DecimalFormat df = new DecimalFormat("####0.00");
         double value = PlantType.CARNIVOROUSPLANT.getLitersPerDay() * (LITERS_FOR_HEIGHT * heightInCm);
         return "Your " + heightInCm + " CM tall carnivorous plant needs " +

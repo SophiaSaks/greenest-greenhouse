@@ -15,13 +15,13 @@ public class Hotel {
         plants.add(plant);
     }
 
-//    public Plant findPlantByName(String name){
-//            for(Plant plant : plants) {
-//                if(plant.getName().equals(name)){
-//                    return plant;
-//                }
-//            }
-//            return null;
-//    }
+    public Plant findPlant(String name){
+            for(Plant plant : plants) {
+                if(plant.getName().equalsIgnoreCase(name)){
+                    return plant;
+                }
+            }
+            return null;
+    }
 
 }

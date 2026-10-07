@@ -6,9 +6,7 @@ import model.Palmtree;
 import java.util.Scanner;
 
 /*TODO:
-Uppfyller arraylisten ett syfte i min kod? Kolla vad som är best practises
 kolla över variabelnamn, hårdkodade värden
-switchen tillräcklig felhantering?
 polymorfism, interface
 lägg kommentarer vart jag använder polymorfism, inkapsling, arv
 inga hårdkodade strängar heller
@@ -25,19 +23,18 @@ public class Main {
         String nonExistentPlant = "Sorry, we could not find that plant and our hotel!";
 
         while(isRunning){
-
             System.out.println(whichPlant);
             String answer = scanner.nextLine();
             answer = answer.toLowerCase().trim();
 
+            Plant plant = hotel.findPlant(answer);
 
-            switch(answer){
-                case "igge" -> System.out.println(Cactus.dailyWateringCactus(20));
-                case "laura" -> System.out.println(Palmtree.dailyWateringy(500));
-                case "meatloaf" -> System.out.println(CarnivorousPlant.dailyWatering(70));
-                case "olof" -> System.out.println(Palmtree.dailyWateringy(100));
-                default -> System.out.println(nonExistentPlant);
+            if (plant != null) {
+                System.out.println(plant.getDailyWatering(plant.getheightInCm()));
+            }else{
+                System.out.println(nonExistentPlant);
             }
+
         }
     }
 
