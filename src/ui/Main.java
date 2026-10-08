@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 /*TODO:
 kolla över variabelnamn, hårdkodade värden
-polymorfism, interface
+polymorfism
 lägg kommentarer vart jag använder polymorfism, inkapsling, arv
 inga hårdkodade strängar heller
  */
@@ -28,9 +28,8 @@ public class Main {
 
             Plant plant = hotel.findPlant(answer);
 
-            if (plant instanceof DailyWatering) {
-                DailyWatering dailyWatering = (DailyWatering) plant;
-                System.out.println(dailyWatering.dailyWatering(plant.getheightInCm()));
+            if(plant != null){
+                System.out.println(plant.dailyWatering(plant.getheightInCm()));
             } else{
                 System.out.println(nonExistentPlant);
             }

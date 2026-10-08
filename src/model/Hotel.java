@@ -3,7 +3,6 @@ package model;
 import java.util.ArrayList;
 
 public class Hotel {
-    private Plant plant;
     private ArrayList<Plant> plants = new ArrayList<Plant>();
     private String name;
 
