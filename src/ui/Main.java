@@ -19,23 +19,27 @@ public class Main {
     static void main(String[] args) {
         addInitialPlants();
         boolean isRunning = true;
-        String whichPlant = "Which plant needs watering?";
         String nonExistentPlant = "Sorry, we could not find that plant and our hotel!";
 
         while(isRunning){
-            System.out.println(whichPlant);
+            printMenu();
             String answer = scanner.nextLine();
             answer = answer.toLowerCase().trim();
 
             Plant plant = hotel.findPlant(answer);
 
-            if (plant != null) {
-                System.out.println(plant.getDailyWatering(plant.getheightInCm()));
+            if (plant instanceof DailyWatering) {
+                DailyWatering dailyWatering = (DailyWatering) plant;
+                System.out.println(dailyWatering.dailyWatering(plant.getheightInCm()));
             } else{
                 System.out.println(nonExistentPlant);
             }
 
         }
+    }
+
+    static void printMenu(){
+        System.out.println("Which plant needs watering?");
     }
 
     static void addInitialPlants(){

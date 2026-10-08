@@ -22,6 +22,4 @@ public abstract class Plant {
         this.heightInCm = heightInCm;
     }
 
-    public abstract String getDailyWatering(double heightInCm);
-
 }
