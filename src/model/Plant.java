@@ -1,6 +1,8 @@
 package model;
 
-public abstract class Plant {
+import java.text.DecimalFormat;
+
+public abstract class Plant implements DailyWatering{
     //inkapsling på name, plantType och heightInCm
     private String name;
     private PlantType plantType;
@@ -10,10 +12,6 @@ public abstract class Plant {
         return name;
     }
 
-    public PlantType getPlantType() {
-        return plantType;
-    }
-
     public double getheightInCm(){return heightInCm; }
 
     public Plant(String name, PlantType plantType, double heightInCm){
@@ -21,5 +19,11 @@ public abstract class Plant {
         this.plantType = plantType;
         this.heightInCm = heightInCm;
     }
+
+    @Override
+    public String dailyWatering(double heightInCm) {
+        return "This plant does not have a specific watering calculcation yet!";
+    }
+
 
 }
