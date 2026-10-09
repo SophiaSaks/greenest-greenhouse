@@ -9,7 +9,6 @@ import java.util.Scanner;
 kolla över variabelnamn, hårdkodade värden
 polymorfism
 lägg kommentarer vart jag använder polymorfism, inkapsling, arv
-inga hårdkodade strängar heller
  */
 
 public class Main {
@@ -33,7 +32,6 @@ public class Main {
             } else{
                 System.out.println(nonExistentPlant);
             }
-
         }
     }
 

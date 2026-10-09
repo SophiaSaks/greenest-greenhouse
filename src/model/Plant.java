@@ -1,6 +1,6 @@
 package model;
 
-import java.text.DecimalFormat;
+//implementerar DailyWaterings interface
 
 public abstract class Plant implements DailyWatering{
     //inkapsling på name, plantType och heightInCm
@@ -20,6 +20,7 @@ public abstract class Plant implements DailyWatering{
         this.heightInCm = heightInCm;
     }
 
+    //standard-metod alla separata växter får göra om
     @Override
     public String dailyWatering(double heightInCm) {
         return "This plant does not have a specific watering calculcation yet!";
