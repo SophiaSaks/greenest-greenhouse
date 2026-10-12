@@ -1,9 +1,4 @@
 package ui;
-import model.*;
-import model.Cactus;
-import model.CarnivorousPlant;
-import model.Palmtree;
-import java.util.Scanner;
 
 /*TODO:
 kolla över variabelnamn, hårdkodade värden
