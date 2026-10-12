@@ -1,8 +1,6 @@
 package ui;
 
 /*TODO:
-kolla över variabelnamn, hårdkodade värden
-polymorfism
 lägg kommentarer vart jag använder polymorfism, inkapsling, arv
  */
 

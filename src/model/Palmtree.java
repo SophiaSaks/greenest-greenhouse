@@ -1,6 +1,6 @@
 package model;
 
-//arv från model.Hotel.model.Plant och implementerar interfacet DailyWatering
+//arv från Plant
 public class Palmtree extends Plant{
 
     public Palmtree(String name, double heightInCm){

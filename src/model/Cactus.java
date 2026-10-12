@@ -1,6 +1,6 @@
 package model;
 
-//arv från model.Hotel.model.Plant och implementerar interfacet DailyWatering
+//arv från model.Hotel.model.Plant
 public class Cactus extends Plant {
 
     public Cactus(String name, double heightInCm){

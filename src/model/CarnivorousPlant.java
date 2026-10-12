@@ -2,7 +2,7 @@ package model;
 
 import java.text.DecimalFormat;
 
-//arv från model.Hotel.model.Plant och implementerar interfacet DailyWatering
+//arv från Plant
 public class CarnivorousPlant extends Plant {
     public static final double LITERS_FOR_HEIGHT = 0.2;
 
