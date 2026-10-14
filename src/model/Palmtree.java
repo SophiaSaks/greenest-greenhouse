@@ -8,6 +8,7 @@ public class Palmtree extends Plant{
     }
 
     //polymorfism
+    @Override
     public String dailyWatering(double heightInCm) {
             return "Your " + heightInCm + " CM tall palmtree needs " +
                     (PlantType.PALMTREE.getLitersPerDay() * heightInCm) +

@@ -8,6 +8,7 @@ public class Cactus extends Plant {
     }
 
     //Polymorfism
+    @Override
     public String dailyWatering(double heightInCm) {
         return "Your " + heightInCm + " CM tall cactus needs " +
                 PlantType.CACTUS.getLitersPerDay() +

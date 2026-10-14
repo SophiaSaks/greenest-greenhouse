@@ -23,7 +23,7 @@ public abstract class Plant implements DailyWatering{
     //standard-metod alla separata växter får göra om
     @Override
     public String dailyWatering(double heightInCm) {
-        return "This plant does not have a specific watering calculcation yet!";
+        return "This plant does not have a specific watering instruction yet!";
     }
 
 

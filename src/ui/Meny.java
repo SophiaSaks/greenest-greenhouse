@@ -31,6 +31,7 @@ public class Meny {
         System.out.println("\u001b[32;1mWhich plant needs watering?\u001b[0m");
     }
 
+    //polymorfism
     static void addInitialPlants(){
         hotel.add(new Cactus("Igge", 20));
         hotel.add(new Palmtree("Laura", 500));

@@ -11,6 +11,7 @@ public class CarnivorousPlant extends Plant {
     }
 
     //polymorfism
+    @Override
     public String dailyWatering(double heightInCm){
         DecimalFormat df = new DecimalFormat("####0.00");
         double value = PlantType.CARNIVOROUSPLANT.getLitersPerDay() * (LITERS_FOR_HEIGHT * heightInCm);
