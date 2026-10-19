@@ -1,6 +1,6 @@
 package model;
 
-//arv från Plant
+//arv från plant
 public class Palmtree extends Plant{
 
     public Palmtree(String name, double heightInCm){

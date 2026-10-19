@@ -14,15 +14,17 @@ public class Meny {
         while(isRunning){
             printMenu();
             String answer = scanner.nextLine();
-            answer = answer.toLowerCase().trim();
+            answer = answer.trim();
 
             Plant plant = hotel.findPlant(answer);
 
-            if(plant != null){
-                System.out.println(plant.dailyWatering(plant.getheightInCm()));
-            } else{
+            try{
+            double height = plant.getheightInCm();
+            System.out.println(plant.dailyWatering(height));
+            } catch (NullPointerException e){
                 System.out.println(nonExistentPlant);
             }
+
         }
         scanner.close();
     }
