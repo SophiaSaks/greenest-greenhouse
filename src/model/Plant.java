@@ -13,12 +13,12 @@ public abstract class Plant implements DailyWatering{
         return name;
     }
 
-    public double getheightInCm(){return heightInMeters; }
+    public double getheightInMeters(){return heightInMeters; }
 
-    public Plant(String name, PlantType plantType, double heightInCm){
+    public Plant(String name, PlantType plantType, double heightInMeters){
         this.name = name;
         this.plantType = plantType;
-        this.heightInMeters = heightInCm;
+        this.heightInMeters = heightInMeters;
     }
 
     //abstrakt metod alla separata växter får göra om till sina egna

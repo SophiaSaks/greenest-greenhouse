@@ -19,7 +19,7 @@ public class Meny {
             Plant plant = hotel.findPlant(answer);
 
             try{
-            double height = plant.getheightInCm();
+            double height = plant.getheightInMeters();
             System.out.println(plant.dailyWatering(height));
             } catch (NullPointerException e){
                 System.out.println(nonExistentPlant);
