@@ -35,10 +35,10 @@ public class Meny {
 
     //polymorfism
     static void addInitialPlants(){
-        hotel.add(new Cactus("Igge", 20));
-        hotel.add(new Palmtree("Laura", 500));
-        hotel.add(new CarnivorousPlant("Meatloaf", 70));
-        hotel.add(new Palmtree("Olof", 100));
+        hotel.add(new Cactus("Igge", 0.2));
+        hotel.add(new Palmtree("Laura", 5));
+        hotel.add(new CarnivorousPlant("Meatloaf", 0.7));
+        hotel.add(new Palmtree("Olof", 1));
     }
 
 }
