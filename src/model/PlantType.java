@@ -5,6 +5,7 @@ public enum PlantType {
     CARNIVOROUSPLANT("proteindrink", 0.1),
     CACTUS("mineralwater", 0.2);
 
+    //inkapsling
     private final String liquidType;
     private final double litersPerDay;
 
