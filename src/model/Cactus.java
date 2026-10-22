@@ -1,6 +1,6 @@
 package model;
 
-//arv från model.Hotel.model.Plant
+//arv från Plant
 public class Cactus extends Plant {
 
     public Cactus(String name, double heightInMeters){
@@ -9,8 +9,8 @@ public class Cactus extends Plant {
 
     //Polymorfism
     @Override
-    public String dailyWatering(double heightInMeters) {
-        return "Your " + heightInMeters + " M tall cactus needs " +
+    public String dailyWatering() {
+        return "Your " + getheightInMeters() + " M tall cactus needs " +
                 PlantType.CACTUS.getLitersPerDay() +
                 " liters of " +
                 PlantType.CACTUS.getLiquidType() +

@@ -19,8 +19,7 @@ public class Meny {
             Plant plant = hotel.findPlant(answer);
 
             try{
-            double height = plant.getheightInMeters();
-            System.out.println(plant.dailyWatering(height));
+            System.out.println(plant.dailyWatering());
             } catch (NullPointerException e){
                 System.out.println(nonExistentPlant);
             }
@@ -33,7 +32,6 @@ public class Meny {
         System.out.println("\u001b[32;1mWhich plant needs watering?\u001b[0m");
     }
 
-    //polymorfism
     static void addInitialPlants(){
         hotel.add(new Cactus("Igge", 0.2));
         hotel.add(new Palmtree("Laura", 5));
